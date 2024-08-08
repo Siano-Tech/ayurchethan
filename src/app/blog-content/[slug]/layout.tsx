@@ -3,6 +3,7 @@
 import { Inter } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import '../../globals.css'
+import { ReactNode } from 'react'
 
 const fontHeading = Inter({
   subsets: ['latin'],
@@ -16,7 +17,12 @@ const fontBody = Inter({
   variable: '--font-body',
 })
 
-export default function Layout({ children }) {
+interface Props {
+  children?: ReactNode
+  // any props that come into the component
+}
+
+export default function Layout({ children }: Props) {
   return (
     <html lang="en">
       <body 

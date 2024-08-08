@@ -261,7 +261,7 @@ export default function Component() {
   )
 }
 
-function LeafIcon(props) {
+function LeafIcon(props: any) {
   return (
     <svg
       {...props}
@@ -282,7 +282,7 @@ function LeafIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props: any) {
   return (
     <svg
       {...props}
